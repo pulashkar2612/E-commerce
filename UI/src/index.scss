@@ -1,0 +1,101 @@
+$accent: rgb(64, 165, 233);
+$font: #272727;
+$headerBg: whitesmoke;
+
+body {
+  margin: 0;
+  font-family: "open-sans";
+  background-color: gray;
+  height: 100%;
+}
+
+.container {
+  background-color: white;
+  width: 800px;
+  padding: 0;
+  color: $font;
+  min-height: 100vh;
+  .form-control {
+    border-radius: 0%;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    background-color: white;
+    color: $accent;
+    border-radius: 0;
+  }
+  .spinner-wrapper {
+    position: fixed !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+    width: 800px !important;
+    height: 100% !important;
+    z-index: 10000;
+  }
+  .spinner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    .spinner-border {
+      color: $accent;
+    }
+  }
+
+  .button-selected {
+    background-color: $accent;
+    color: #fff;
+  }
+  .card {
+    border-color: $accent;
+  }
+
+  .currency {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-left: -0.25rem;
+  }
+
+  .cart-badge {
+    background-color: whitesmoke !important;
+    font-size: 14px;
+    display: block;
+    margin-bottom: -0.5rem;
+  }
+
+  .icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .cartProduct {
+    border: 1px solid $accent;
+  }
+
+  .priceDetails {
+    border: 1px solid $accent;
+    height: fit-content;
+  }
+}
+
+.header {
+  padding: 0.75rem;
+  background-color: $headerBg;
+  color: $accent;
+  h1 {
+    cursor: pointer;
+  }
+}
+
+.signup {
+  h2 {
+    color: $accent;
+  }
+}
